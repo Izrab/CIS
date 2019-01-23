@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui, viewport-fit=cover">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <!-- Color theme for statusbar -->
+    <meta name="theme-color" content="#2196f3">
+    <!-- Your app title -->
+    <title>CIS College</title>
+    <!-- Path to Framework7 Library CSS -->
+    <link rel="stylesheet" href="lib/framework7/css/framework7.min.css">
+
+    <link rel="stylesheet" href="lib/swiper/js/swiper.min.css">
+
+    <!-- Path to your custom app styles-->
+    <link rel="stylesheet" href="css/main.css">
+  </head>
+  <body>
+    <!-- App root element -->
+    <div id="app">
+      <!-- Statusbar overlay -->
+      <div class="statusbar"></div>
+
+       <!-- Right panel with reveal effect-->
+    <div class="panel panel-left panel-reveal theme-dark">
+        <div class="view">
+          <div class="page">
+            <div class="navbar">
+              <div class="navbar-inner">
+                <div class="title">Menu</div>
+              </div>
+            </div>
+            <div class="page-content">
+                <div class="list links-list no-chevron">
+                    <ul>
+                        <li><a href="/home/" class="item-link item-content">Home</a></li>
+                      <li><a href="/register/" class="item-link item-content">Register</a></li>
+                      <li><a href="/teachers/" class="item-link item-content"">Teachers</a></li>
+                      <li><a href="/schedule/" class="item-link item-content">Schedule</a></li>
+                      <li><a href="/faq/" class="item-link item-content">FAQ</a></li>
+                     
+                    </ul>
+                  </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Your main view, should have "view-main" class -->
+      <div class="view view-main">
+        <!-- Initial Page, "data-name" contains page name -->
+        <div data-name="home" class="page">
+
+         <!-- Top Navbar -->
+        <div class="navbar">
+          <div class="navbar-inner">
+            <div class="left">
+              <a href="#" class="link icon-only panel-open" data-panel="left">
+                <img src="res/icons/menu.svg"/>
+              
+              </a>
+            </div>
+            <div class="title sliding">CIS College</div>
+           
+          </div>
+        </div>
+
+         <!-- Scrollable page content-->
+         <div class="page-content">
+           
+
+  <!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">CIS Group is an Educational Group in Lebanon, formed of the following Institutes:<br> CIS College, Leaders Technology Center, Higher Business College, <br>CIS College Kurdistan, and Matn University College of Technology.</div>
+      <div class="swiper-slide">We are a leading Vocational and Technical Education<br> College and Training Center that was established in Beirut, Lebanon in 1991.</div>
+      <div class="swiper-slide">CIS College also is known for having the most professional Training Center <br>that offers a wide variety of training courses of different fields.</div>
+    </div>
+    <!-- Add Pagination -->
+    <div class="swiper-pagination"></div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+</div>
+
+
+            </div>
+        </div>
+      </div>
+    </div>
+    <!-- Path to Framework7 Library JS-->
+    <script type="text/javascript" src="lib/framework7/js/framework7.min.js"></script>
+
+    <script src="lib/swiper/js/swiper.min.js"></script>
+
+    <script type="text/javascript" src="lib/jquery-3.3.1.min.js"></script>
+
+    <!-- Path to your app js-->
+    <script type="text/javascript" src="js/main.js"></script>
+    <script>
+    var swiper = new Swiper('.swiper-container', {
+      spaceBetween: 30,
+      centeredSlides: true,
+      loop: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      autoplay: {
+        delay: 3500,
+        disableOnInteraction: false,
+      },
+    
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });     
+     </script>
+  </body>
+</html>

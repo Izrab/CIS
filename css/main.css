@@ -1,0 +1,79 @@
+@font-face {
+    font-family: Ubuntu-R; 
+    src:
+         url(../res/fonts/Ubuntu-R.ttf) format('truetype');  
+}
+/* Write the comments for explanation of everything
+possible, including .. and directory navigation with dots,  */
+
+/* For changing the background color of pages use the 
+following: */
+
+.page-content {
+    background-color: white; 
+
+} 
+
+
+* {
+    
+    font-family: Ubuntu-R, sans-serif;
+    font-size: 21px; 
+}  
+
+.navbar {
+    padding: 7px; 
+}
+.navbar-inner {
+    /* #7d8471 */
+    background-color: rgb(80, 95, 29);
+}
+
+/* The following is for setting the stylesheet of Swiper */
+html, body {
+    position: relative;
+    height: 100%;
+  }
+  body {
+    background: #eee;
+    color:#000;
+    margin: 0;
+    padding: 0;
+  }
+  .swiper-container {
+    
+    width: 100%;
+    height: 71%;
+  }
+  .swiper-slide {
+    text-align: center;
+    font-size: 21px;
+    background: #fff;
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+
+   .list {
+      color: black;
+  }
+
+  /* Following pagetitle1 is similar to the stylesheet of F7 class="title" but doing custom to avoid the font error of letter Kurdish R or other vulnerable letters */ 
+
+  .pagetitle1 {
+    margin: 0 16px;
+}
+
+.item-inner {
+    font-size: 44px;
+}
